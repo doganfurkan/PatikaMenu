@@ -150,6 +150,12 @@ function ortayamı(){
 }
 
 function listFoods(gelen) {
+  kategoriler.forEach(gel => {
+    document.getElementById(gel).classList.remove("btn-dark");
+    document.getElementById(gel).classList.add("btn-outline-dark")
+  });
+  document.getElementById(gelen).classList.add("btn-dark");
+  document.getElementById(gelen).classList.remove("btn-outline-dark");
   if (gelen == "All") {
     yol = 0;
     menu.forEach(menuYap);
