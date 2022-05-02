@@ -156,6 +156,7 @@ function listFoods(gelen) {
   });
   document.getElementById(gelen).classList.add("btn-dark");
   document.getElementById(gelen).classList.remove("btn-outline-dark");
+  setTimeout(() => {document.getElementById(gelen).blur()},500);
   if (gelen == "All") {
     yol = 0;
     menu.forEach(menuYap);
